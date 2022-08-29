@@ -1,0 +1,57 @@
+body {
+    width: 100%;
+}
+
+div.content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+details {
+    display: inline;
+    width: 100%;
+    border-left: 1px solid #aaa;
+    padding: .5em .5em 0;
+}
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+    list-style-type: none;
+}
+
+details[open] {
+    padding: .5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
+h1 {
+    text-align: center;
+}
+
+.countup{
+    counter-reset: rank 0;
+  }
+  .countup div {
+    position: relative;
+    margin: 8px 0;
+    padding-left: 32px;
+    border: 1px solid #333;
+    border-radius: 0.2em;
+    vertical-align: middle;
+  }
+  .countup div::before {
+    counter-increment: rank;
+    content: counter(rank);
+    display: block;
+    position: absolute;
+    left: 0; 
+    top: 8px;
+    width: 32px;
+    text-align: center;
+  }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- jqueryライブラリ -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- jquery.csvプラグイン -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.11/jquery.csv.min.js"></script>
+    <title>スラ練</title>
+</head>
+<body>
+    <script>
+        // CSVを配列で読み込む
+        $(function () {
+          function parseCsv(data) {
+            // csv配列を変数に格納
+            var csv = $.csv.toArrays(data);
+            console.log(csv);
+          }
+          // CSVファイルの読み込み
+          $.get("test.csv", parseCsv, "text");
+        });
+        </script>
+    <div class="content">
+        <h1>動詞の活用のスラ練</h1>
+        <div class="countup">
+            <div>
+                <details>
+                    <summary>活用がある品詞は？</summary>
+                    動詞と助動詞
+              </details>
+             </div>
+            <div>
+               <details>
+                    <summary>活用はいくつある？</summary>
+                    ５つ
+                </details>
+            </div>
+            <div>
+                <details>
+                     <summary>活用を順番に全部言って。</summary>
+                     原形・現在形・過去形・過去分詞形・ing形
+                 </details>
+             </div>
+             <div>
+                <details>
+                     <summary>各活用形にはそれぞれポイントがあるんだけど、それが何か言える？</summary>
+                     言えます。
+                 </details>
+             </div>
+             <div>
+                <details>
+                     <summary>それじゃあ最初からやってみよう。原形のポイントはなんだっけ？</summary>
+                     原形を使う５つの場所です。
+                 </details>
+             </div>
+             <div>
+                <details>
+                     <summary>現在形のポイントは？</summary>
+                     必ず述語動詞になる。
+                 </details>
+             </div>
+             <div>
+                <details>
+                     <summary>過去形のポイントは？</summary>
+                     必ず述語動詞になる。
+                 </details>
+             </div>
+             <div>
+                <details>
+                     <summary>現在形と過去形って準動詞にならないの？</summary>
+                     なりません。
+                 </details>
+             </div>
+             <div>
+                <details>
+                     <summary>絶対？例外はないの？</summary>
+                     絶対です。例外はありません。
+                 </details>
+             </div>
+        </div>
+    </content>
+</body>
+</html>

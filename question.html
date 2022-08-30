@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- jqueryライブラリ -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- jquery.csvプラグイン -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.11/jquery.csv.min.js"></script>
+    <title>スラ練</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="hinshi.html">品詞について</a></li>
+                <li><a href="verb.html">動詞の活用のスラ練</a></li>
+                <li><a href="question.html">質問</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        // CSVを配列で読み込む
+        $(function () {
+          function parseCsv(data) {
+            // csv配列を変数に格納
+            var csv = $.csv.toArrays(data);
+            console.log(csv);
+          }
+          // CSVファイルの読み込み
+          $.get("test.csv", parseCsv, "text");
+        });
+        </script>
+    <div class="content">
+        <h1>質問</h1>
+        <h2>01</h2>
+        <div class="countup">
+            <div>
+               <details>
+                    <summary>働きとは？</summary>
+                    ある語が別の語に対してもつ働き
+                </details>
+            </div>
+            <div>
+                <details>
+                     <summary>修飾とは？</summary>
+                     他の語の助けを借りずに説明すること
+                 </details>
+            </div>
+            <div>
+                <details>
+                     <summary>形容詞の働きは？</summary>
+                     名詞修飾、補語
+                 </details>
+            </div>
+            <div>
+                <details>
+                     <summary>副詞の働きは？</summary>
+                     動詞修飾、形容詞修飾、副詞修飾、文修飾
+                </details>
+            </div>
+        </div>
+        <h2>02</h2>
+        <div class="countup">
+            <div>
+                <details>
+                    <summary>活用は全部でいくつか？</summary>
+                    5つ
+                </details>
+            </div>
+            <div>
+                <details>
+                    <summary>活用の最初の形は何形か？</summary>
+                    原形
+                </details>
+            </div>
+            <div>
+                <details>
+                    <summary>活用を最初から順に言いなさい。</summary>
+                    原形、現在形、過去形、過去分詞形、ing形
+                </details>
+            </div>
+            <div>
+                <details>
+                     <summary>活用の3番目の形は何形か？</summary>
+                     過去形
+                 </details>
+             </div>
+             <div>
+                <details>
+                     <summary>活用の2番目の形は何形か？</summary>
+                     現在形
+                 </details>
+             </div>
+             <div>
+                <details>
+                     <summary>活用に未来形はあるか？</summary>
+                     ない
+                 </details>
+             </div>
+             <div>
+                <details>
+                     <summary>活用に現在分詞形はあるか？</summary>
+                     ない
+                 </details>
+             </div>
+             <div>
+                <details>
+                    <summary>活用に過去分詞形はあるか？</summary>
+                    ある
+                </details>
+             </div>
+             <div>
+                 <details>
+                    <summary>過去分詞形は活用の何番目か？</summary>
+                   　4番目<strong>形容詞の<strong>働き</strong></strong>のこと
+            </div>
+            <div>
+               <details>
+                   <summary>活用の最後の形は何形か？</summary>
+                   ing形
+                </details>
+            </div>
+            <div>
+               <details>
+                    <summary>活用を言いなさいと言われたら何形を答えるか？</summary>
+                    原形と過去形と過去分詞形
+                 </details>
+             </div>
+            <div>
+              <details>
+                <summary>規則活用とはどういう活用か？</summary>
+                過去形と過去分詞形が、原形にedがついたつづりになる活用
+                </details>
+            </div>
+        </div>
+        <h2>03</h2>
+        <div class="countup">
+            <div>
+                <details>
+                    <summary>文とは？</summary>
+                    構造上の主語＋述語動詞
+                </details>
+            </div>
+            <div>
+                <details>
+                    <summary>英文とは？</summary>
+                    大文字で始まりピリオドで終わる語群
+                </details>
+            </div>
+            <div>
+                <details>
+                    <summary>主語になれる品詞は？</summary>
+                    名詞<strong>のみ</strong>
+                </details>
+            </div>
+            <div>
+                <details>
+                  <summary>現在形の動詞は絶対に（　）になる。</summary>
+                    述語動詞
+                </details>
+            </div>
+            <div>
+                <details>
+                  <summary>現在形の動詞は絶対に（　）を作る。</summary>
+                    文
+                </details>
+            </div>
+            <div>
+                <details>
+                  <summary>過去形の動詞は絶対に（　）になる。</summary>
+                    述語動詞
+                  </details>
+            </div>
+            <div>
+                <details>
+                  <summary>過去形の動詞は絶対に（　）を作る。</summary>
+                    文
+                  </details>
+            </div>
+            <div>
+                <details>
+                    <summary>動詞は（　）にならないこともある。</summary>
+                    述語動詞
+                </details>
+            </div>
+            <div>
+                <details>
+                    <summary>動詞は（　）を作らないこともある。</summary>
+                    文
+                </details>
+            </div>
+            <div>
+                <details>
+                  <summary>be動詞は（　）動詞である。</summary>
+                    原形がbeである
+                </details>
+            </div>
+            <div>
+                <details>
+                  <summary>be動詞以外の動詞は何というか？</summary>
+                   一般動詞 
+                </details>
+            </div>
+            <div>
+                <details>
+                  <summary>be動詞の意味は？</summary>
+                    ある・いる
+                  </details>
+            </div>
+            <div>
+                <details>
+                  <summary>be動詞の現在形は？</summary>
+                  am・is・are
+                  </details>
+            </div>
+            <div>
+                <details>
+                  <summary>be動詞の過去形は？</summary>
+                    was・were
+                  </details>
+            </div>
+            <div>
+                <details>
+                  <summary>be動詞の過去分詞形は？</summary>
+                    been
+                </details>
+            </div>
+            <div>
+                <details>
+                  <summary>be動詞のing形は？</summary>
+                    beeing
+                  </details>
+            </div>
+            <div>
+                <details>
+                  <summary>誘導副詞thereの働きは？</summary>
+                    述語動詞を主語の前に引き出す。
+                  </details>
+            </div>
+        </div>
+        <h2>04 ( )に適切なbe動詞を入れて英文を完成させなさい</h2>
+        <div class="countup">
+            <div>
+                <details>
+                    <summary>Today ( ) Monday.</summary>
+                    is
+                </details>
+            </div>
+            <div>
+                <details>
+                    <summary>It ( ) Monday today.</summary>
+                    is
+                </details>
+            </div>
+            <div>
+                <details>
+                    <summary>You ( ) a little child then.</summary>
+                    You are a little child then.
+                </details>
+            </div>
+            <div>
+                <details>
+                    <summary>
+                    I ( ) a good swimmer.<br />
+                    (上手です/上手だった2通り)
+                    </summary>
+                    I am a good swimmer.<br />
+                    I was a good swimmer. 
+                </details>
+            </div>
+            <div>
+                <details>
+                    <summary>
+                    You ( ) a really hard worker.<br />
+                    (勉強家だ/勉強家だった 2通り)
+                    </summary>
+                    You are a really hard worker.<br />
+                    YOu were a really hard worker.
+                </details>
+            </div>
+        </div>
+        <h2>05 ( )内の日本語を英語にして英文を完成させなさい。</h2>
+        <div class="countup">
+            <div>
+                <details>
+                    <summary>（彼女）stood apart from (彼).</summary>
+                    She stood apart from him.
+                </details>
+            </div>
+            <div>
+                <details>
+                    <summary>(あなた) stood apart from (私たち).</summary>
+                    You stood apart from us.
+                </details>
+            </div>
+            <div>
+                <details>
+                    <summary>(私たち) stood apart from (あなた).</summary>
+                    We stood apart from you.
+                </details>
+            </div>
+            <div>
+                <details>
+                    <summary>(彼ら) stood apart from (私).</summary>
+                    They stood apart from me.
+                </details>
+            </div>
+            <div>
+                <details>
+                    <summary>(私) stood apart from (彼ら).</summary>
+                    I stood apart from them.
+                </details>
+            </div>
+        </div>
+        <h2>06 He found book easy.について</h2>
+        <div class="countup">
+            <div>
+                <details>
+                    <summary>foundは述語動詞か準動詞か？
+                    </summary>
+                    述語動詞
+                </details>
+            </div>
+            <div>
+                <details>
+                    <summary>foundは何形か？</summary>
+                    過去形 
+                </details>
+            </div>
+            <div>
+                <details>
+                    <summary>foundは何番か？</summary>
+                    5番
+                </details>
+            </div>
+            <div>
+                <details>
+                    <summary>この文の文型は？</summary>
+                    第五文型（SVOCも可)
+                </details>
+            </div>
+            <div>
+                <details>
+                    <summary>bookの働きは？</summary>
+                    動詞の目的語
+                </details>
+            </div>
+            <div>
+                <details>
+                    <summary>easyの品詞と働きは？</summary>
+                    形容詞で補語
+                </details>
+            </div>
+            <div>
+                <details>
+                    <summary>「構造上の主語＋述語動詞」を指摘せよ。</summary>
+                    He found
+                </details>
+            </div>
+            <div>
+                <details>
+                    <summary>この英文中の「意味上の主語・述語関係」を日本語で言いなさい。</summary>
+                    その本は平易である。
+                </details>
+            </div>
+        </div>
+    </content>
+</body>
+</html>

@@ -36,13 +36,13 @@ h1 {
 
 .countup{
     counter-reset: rank 0;
+    box-sizing: border-box;
   }
   .countup div {
     position: relative;
     margin: 8px 0;
     padding-left: 32px;
     border: 1px solid #333;
-    box-sizing: border-box;
     border-radius: 0.2em;
     vertical-align: middle;
   }

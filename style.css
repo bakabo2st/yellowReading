@@ -26,6 +26,7 @@ details[open] {
 }
 
 details[open] summary {
+    width: 90%;
     border-bottom: 1px solid #aaa;
     margin-bottom: .5em;
 }

@@ -28,6 +28,7 @@ details[open] {
 details[open] summary {
     width: 90%;
     border-bottom: 1px solid #aaa;
+    box-sizing: border-box;
     margin-bottom: .5em;
 }
 

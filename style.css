@@ -35,7 +35,6 @@ details[open] {
 }
 
 details[open] summary {
-    width: 100%;
     border-bottom: 1px solid #aaa;
     margin-bottom: .5em;
 }
@@ -67,10 +66,10 @@ h1 {
   }
 
   ul {
-    display: flex;
+    display: block;
     list-style: none;
   }
 
-  ul li {
-    margin-left: 1em;
+  ul li a{
+    text-decoration: none;
   }

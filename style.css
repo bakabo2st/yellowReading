@@ -75,7 +75,7 @@ h1 {
     text-decoration: none;
   }
 
-  .acd-check{
+.acd-check{
     display: none;
 }
 .acd-label{
@@ -98,4 +98,5 @@ h1 {
     opacity: 1;
     padding: 10px;
     visibility: visible;
+    background: #333;
 }

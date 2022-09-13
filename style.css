@@ -101,4 +101,5 @@ h1 {
     padding: 10px;
     line-height: 1.3em;
     visibility: visible;
+    box-sizing: border-box;
 }

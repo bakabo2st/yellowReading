@@ -1,6 +1,8 @@
 *,
 *:before,
-*:after {
+*:after 
+nav
+ul{
   box-sizing: inherit;
 }
 

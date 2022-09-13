@@ -1,8 +1,7 @@
 *,
 *:before,
 *:after 
-nav
-ul{
+{
   box-sizing: inherit;
 }
 
@@ -11,7 +10,7 @@ html {
 }
 
 body {
-    width: 100%;
+  margin: 0;
 }
 
 div.content {
@@ -71,12 +70,15 @@ h1 {
   ul {
     display: block;
     list-style: none;
+    box-sizing:border-box
   }
 
   ul li a{
     text-decoration: none;
   }
 
+
+  /* メニュー */
 .acd-check{
     display: none;
 }
@@ -84,18 +86,16 @@ h1 {
     background: #333;
     color: #fff;
     display: block;
-    margin-bottom: 1px;
     padding: 10px;
 }
 .acd-content{
     margin: 0;
-    border: 1px solid #333;
+    border-bottom: 1px solid #888;
     height: 0;
     opacity: 0;
     padding: 0 10px;
     transition: .5s;
     visibility: hidden;
-    box-sizing: inherit;
 }
 .acd-check:checked + .acd-label + .acd-content{
     height: 200px;
@@ -103,5 +103,4 @@ h1 {
     padding: 10px;
     line-height: 1.3em;
     visibility: visible;
-    box-sizing: inherit;
 }

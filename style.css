@@ -65,7 +65,9 @@ h1 {
     width: 32px;
     text-align: center;
   }
-
+nav {
+  background: #333;
+}
   ul {
     display: block;
     list-style: none;
@@ -94,9 +96,8 @@ h1 {
     visibility: hidden;
 }
 .acd-check:checked + .acd-label + .acd-content{
-    height: 200px;
+    height: 40px;
     opacity: 1;
     padding: 10px;
     visibility: visible;
-    background: #333;
 }

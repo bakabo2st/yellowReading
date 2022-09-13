@@ -96,7 +96,7 @@ nav {
     visibility: hidden;
 }
 .acd-check:checked + .acd-label + .acd-content{
-    height: 40px;
+    height: 200px;
     opacity: 1;
     padding: 10px;
     visibility: visible;

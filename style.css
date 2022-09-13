@@ -75,45 +75,27 @@ h1 {
     text-decoration: none;
   }
 
-  .toggle {
+  .acd-check{
     display: none;
-  }
-  .Label {		/*タイトル*/
-    padding: 1em;
-    display: block;
+}
+.acd-label{
+    background: #333;
     color: #fff;
-    background:#019ac6;
-  }
-  .Label::before{		/*タイトル横の矢印*/
-    content:"";
-    width: 6px;
-    height: 6px;
-    border-top: 2px solid #fff;
-    border-right: 2px solid #fff;
-    -webkit-transform: rotate(45deg);
-    position: absolute;
-    top:calc( 50% - 3px );
-    right: 20px;
-    transform: rotate(135deg);
-  }
-  .Label,
-  .content {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    transform: translateZ(0);
-    transition: all 0.3s;
-  }
-  .content {		/*本文*/
+    display: block;
+    margin-bottom: 1px;
+    padding: 10px;
+}
+.acd-content{
+    border: 1px solid #333;
     height: 0;
-    margin-bottom:10px;
-    padding:0 20px;
-    overflow: hidden;
-  }
-  .toggle:checked + .Label + .content {	/*開閉時*/
-    height: auto;
-    padding:20px ;
-    transition: all .3s;
-  }
-  .toggle:checked + .Label::before {
-    transform: rotate(-45deg) !important;
-  }
+    opacity: 0;
+    padding: 0 10px;
+    transition: .5s;
+    visibility: hidden;
+}
+.acd-check:checked + .acd-label + .acd-content{
+    height: 40px;
+    opacity: 1;
+    padding: 10px;
+    visibility: visible;
+}
